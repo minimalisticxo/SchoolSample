@@ -1,1081 +1,708 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2E6F40">
+  <meta name="description" content="Welcome to THE STUDY PARK, Kolkata. Discover our school, campus, learning environment and admissions information.">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <title>THE STUDY PARK — Kolkata</title>
 
-    <meta
-        name="description"
-        content="THE STUDY PARK — A cinematic journey through the school campus."
-    >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <title>THE STUDY PARK — KG to XII</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================================================
-         LOADER
-    ========================================================== -->
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <img
+      src="assets/school-logo.jpg"
+      alt="THE STUDY PARK logo"
+      class="loader-logo"
+    >
 
-   <div class="loader" id="loader">
+    <h1 class="loader-name">THE STUDY PARK</h1>
+    <p class="loader-location">KOLKATA</p>
 
-    <div class="loader-background-text">
-        STUDY
+    <div class="loader-bar">
+      <span></span>
     </div>
+  </div>
 
-    <div class="loader-inner">
 
-        <span class="loader-small">
-            WELCOME TO
-        </span>
+  <!-- NAVIGATION -->
+  <header class="site-header" id="top">
 
-        <h1 class="loader-title">
-            THE
-            <span>STUDY PARK</span>
+    <a href="#top" class="brand">
+      <img src="assets/school-logo.jpg" alt="" class="brand-logo">
+      <span>THE STUDY <b>PARK</b></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#campus">Our Campus</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#location">Location</a>
+      <a href="#contact" class="nav-contact">Contact us ↗</a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          A place to learn, grow and discover
+        </div>
+
+        <h1>
+          THE STUDY
+          <em>PARK.</em>
         </h1>
 
-        <div class="loader-meta">
-            <span>KG — XII</span>
-            <span>KOLKATA</span>
+        <p class="hero-description">
+          Welcome to THE STUDY PARK — a school in Kolkata dedicated
+          to learning, personal growth and building a strong foundation
+          for tomorrow.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#admissions" class="button button-light">
+            Explore admissions <span>↗</span>
+          </a>
+
+          <a href="#campus" class="text-link">
+            Explore our campus ↓
+          </a>
         </div>
 
-        <div class="loader-line">
-            <div class="loader-line-fill"></div>
+        <div class="hero-details">
+          <div>
+            <span class="detail-icon">⌖</span>
+            Garden Reach, Kolkata
+          </div>
+
+          <div>
+            <span class="detail-icon">◷</span>
+            8:00 AM – 2:10 PM
+          </div>
         </div>
 
-    </div>
+      </div>
 
-</div>
 
-    <!-- =========================================================
-         FIXED NAVIGATION
-    ========================================================== -->
+      <div class="hero-visual">
 
-    <header class="topbar">
+        <div class="hero-image-wrap">
+          <img
+            src="assets/school-building.png"
+            alt="THE STUDY PARK school building"
+          >
 
-        <div class="topbar-school">
-            THE STUDY PARK
+          <div class="image-caption">
+            <img src="assets/school-logo.jpg" alt="" class="caption-logo">
+
+            <div>
+              <strong>THE STUDY PARK</strong>
+              <small>Kolkata, West Bengal</small>
+            </div>
+
+            <span class="caption-arrow">↗</span>
+          </div>
         </div>
 
-        <div class="topbar-center">
-            KG — XII
+        <div class="floating-note">
+          <span class="note-symbol">✳</span>
+
+          <div>
+            <strong>KG 1 – Class 12</strong>
+            <small>A journey of learning</small>
+          </div>
         </div>
 
-        <button
-            class="menu-button"
-            type="button"
-            aria-label="Open menu"
-        >
-            <span></span>
-            <span></span>
-        </button>
+      </div>
 
-    </header>
+      <div class="hero-bottom-line">
+        <span>LEARN WITH PURPOSE</span>
+        <span>THE STUDY PARK · KOLKATA</span>
+      </div>
 
+    </section>
 
-    <!-- =========================================================
-         WALKTHROUGH PROGRESS
-    ========================================================== -->
 
-    <div class="walk-progress">
+    <!-- ABOUT THE SCHOOL -->
+    <section class="intro section-pad" id="about">
 
-        <div class="progress-number">
-            <span id="currentScene">01</span>
-            <span class="progress-divider">/</span>
-            <span>17</span>
-        </div>
+      <div class="section-kicker">01 / About our school</div>
 
-        <div class="progress-track">
-            <div
-                class="progress-fill"
-                id="progressFill"
-            ></div>
-        </div>
+      <div class="intro-grid">
 
-    </div>
+        <h2>
+          Education is more than lessons.
+          <span>It is a way forward.</span>
+        </h2>
 
+        <div class="intro-text">
 
-    <!-- =========================================================
-         MAIN WALKTHROUGH
-    ========================================================== -->
+          <p>
+            At THE STUDY PARK, we believe education should inspire
+            students to ask questions, explore ideas and continue
+            growing. We welcome students from KG 1 through Class 12.
+          </p>
 
-    <main id="walkthrough">
+          <p class="slogan">
+            “God teachth men which he knew not.”
+          </p>
 
-
-        <!-- =====================================================
-             01 — THE GATE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-gate"
-            data-scene="01"
-            data-title="THE GATE"
-        >
-
-            <div class="scene-image placeholder-image gate-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        01
-                    </span>
-
-                    <p>
-                        MAIN GATE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="scene-content hero-content">
-
-                <p class="eyebrow">
-                    A PLACE TO BEGIN
-                </p>
-
-                <h1 class="hero-title">
-                    THE<br>
-                    STUDY PARK
-                </h1>
-
-                <p class="hero-description">
-                    A school built around learning,
-                    discipline and growth.
-                </p>
-
-            </div>
-
-            <div class="scroll-indicator">
-
-                <span>
-                    SCROLL TO ENTER
-                </span>
-
-                <div class="scroll-line"></div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             02 — ENTER THE CAMPUS
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-enter"
-            data-scene="02"
-            data-title="ENTER THE CAMPUS"
-        >
-
-            <div class="scene-image placeholder-image entering-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        02
-                    </span>
-
-                    <p>
-                        ENTERING CAMPUS
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card enter-card">
-
-                <div class="glass-card-number">
-                    02
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        STEP INSIDE
-                    </p>
-
-                    <h2>
-                        Where the
-                        journey begins.
-                    </h2>
-
-                    <p>
-                        Beyond the gates is a space
-                        designed for students to learn,
-                        discover and grow.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             03 — ASSEMBLY
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-assembly"
-            data-scene="03"
-            data-title="ASSEMBLY"
-        >
-
-            <div class="scene-image placeholder-image assembly-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        03
-                    </span>
-
-                    <p>
-                        ASSEMBLY AREA
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card assembly-card">
-
-                <div class="glass-card-number">
-                    03
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        TOGETHER
-                    </p>
-
-                    <h2>
-                        Every day
-                        starts together.
-                    </h2>
-
-                    <p>
-                        A shared space where the school
-                        comes together before another
-                        day of learning begins.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             04 — WALK TO THE OFFICE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-office-walk"
-            data-scene="04"
-            data-title="TOWARD THE OFFICE"
-        >
-
-            <div class="scene-image placeholder-image office-walk-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        04
-                    </span>
-
-                    <p>
-                        TOWARD THE OFFICE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="scene-text-left">
-
-                <span class="scene-index">
-                    04
-                </span>
-
-                <p class="eyebrow">
-                    A WALK THROUGH
-                </p>
-
-                <h2>
-                    Follow the path.
-                </h2>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             05 — OFFICE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-office"
-            data-scene="05"
-            data-title="THE OFFICE"
-        >
-
-            <div class="scene-image placeholder-image office-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        05
-                    </span>
-
-                    <p>
-                        SCHOOL OFFICE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card office-card">
-
-                <div class="glass-card-number">
-                    05
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        THE OFFICE
-                    </p>
-
-                    <h2>
-                        At the heart
-                        of the school.
-                    </h2>
-
-                    <p>
-                        The administrative centre that
-                        keeps the everyday life of the
-                        school moving.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             06 — STAIRCASE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-stairs"
-            data-scene="06"
-            data-title="THE STAIRCASE"
-        >
-
-            <div class="scene-image placeholder-image stairs-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        06
-                    </span>
-
-                    <p>
-                        STAIRCASE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="scene-text-bottom">
-
-                <span class="scene-index">
-                    06
-                </span>
-
-                <h2>
-                    Keep going.
-                </h2>
-
-                <p>
-                    The next floor opens another
-                    part of the school.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             07 — SECOND FLOOR
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-second-floor"
-            data-scene="07"
-            data-title="SECOND FLOOR"
-        >
-
-            <div class="scene-image placeholder-image second-floor-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        07
-                    </span>
-
-                    <p>
-                        SECOND FLOOR
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card second-floor-card">
-
-                <div class="glass-card-number">
-                    07
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        UPSTAIRS
-                    </p>
-
-                    <h2>
-                        More rooms.
-                        More questions.
-                    </h2>
-
-                    <p>
-                        A new level of the campus,
-                        filled with spaces created
-                        for learning.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             08 — CORRIDOR
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-corridor"
-            data-scene="08"
-            data-title="THE CORRIDOR"
-        >
-
-            <div class="scene-image placeholder-image corridor-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        08
-                    </span>
-
-                    <p>
-                        CORRIDOR
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="scene-text-center">
-
-                <p class="eyebrow">
-                    THE CORRIDOR
-                </p>
-
-                <h2>
-                    Every door<br>
-                    leads somewhere.
-                </h2>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             09 — CLASSROOMS
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-classrooms"
-            data-scene="09"
-            data-title="CLASSROOMS"
-        >
-
-            <div class="scene-image placeholder-image classroom-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        09
-                    </span>
-
-                    <p>
-                        CLASSROOMS
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card classroom-card">
-
-                <div class="glass-card-number">
-                    09
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        THE CLASSROOM
-                    </p>
-
-                    <h2>
-                        Where curiosity
-                        becomes learning.
-                    </h2>
-
-                    <p>
-                        The everyday space where ideas
-                        are introduced, explored and
-                        understood.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             10 — KG TO XII
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-kg-xii"
-            data-scene="10"
-            data-title="KG TO XII"
-        >
-
-            <div class="scene-image placeholder-image kg-xii-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        10
-                    </span>
-
-                    <p>
-                        KG — XII
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="education-range">
-
-                <span class="range-small">
-                    EDUCATION FROM
-                </span>
-
-                <div class="range-main">
-                    KG
-                    <span>→</span>
-                    XII
-                </div>
-
-                <p>
-                    A journey that grows with
-                    every stage of a student's life.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             11 — CHEMISTRY LAB
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-chemistry"
-            data-scene="11"
-            data-title="CHEMISTRY LAB"
-        >
-
-            <div class="scene-image placeholder-image chemistry-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        11
-                    </span>
-
-                    <p>
-                        CHEMISTRY LAB
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card lab-card">
-
-                <div class="glass-card-number">
-                    11
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        SCIENCE
-                    </p>
-
-                    <h2>
-                        Learn by
-                        discovering.
-                    </h2>
-
-                    <p>
-                        A practical environment where
-                        scientific ideas move beyond
-                        the textbook.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             12 — COMPUTER LAB
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-computer"
-            data-scene="12"
-            data-title="COMPUTER LAB"
-        >
-
-            <div class="scene-image placeholder-image computer-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        12
-                    </span>
-
-                    <p>
-                        COMPUTER LAB
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card computer-card">
-
-                <div class="glass-card-number">
-                    12
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        TECHNOLOGY
-                    </p>
-
-                    <h2>
-                        Learning for
-                        a changing world.
-                    </h2>
-
-                    <p>
-                        Technology becomes another
-                        tool for understanding,
-                        creating and exploring.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             13 — SCIENCE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-science"
-            data-scene="13"
-            data-title="SCIENCE"
-        >
-
-            <div class="scene-image placeholder-image science-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        13
-                    </span>
-
-                    <p>
-                        SCIENCE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="discipline-layout">
-
-                <span class="discipline-number">
-                    13
-                </span>
-
-                <p class="eyebrow">
-                    ACADEMIC PATH
-                </p>
-
-                <h2>
-                    SCIENCE
-                </h2>
-
-                <p>
-                    Question. Observe.
-                    Understand.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             14 — COMMERCE
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-commerce"
-            data-scene="14"
-            data-title="COMMERCE"
-        >
-
-            <div class="scene-image placeholder-image commerce-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        14
-                    </span>
-
-                    <p>
-                        COMMERCE
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="discipline-layout">
-
-                <span class="discipline-number">
-                    14
-                </span>
-
-                <p class="eyebrow">
-                    ACADEMIC PATH
-                </p>
-
-                <h2>
-                    COMMERCE
-                </h2>
-
-                <p>
-                    Understand the systems
-                    that shape the world.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             15 — APPROACH
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-approach"
-            data-scene="15"
-            data-title="THE APPROACH"
-        >
-
-            <div class="scene-image placeholder-image approach-image">
-
-                <div class="image-placeholder-content">
-
-                    <span>
-                        15
-                    </span>
-
-                    <p>
-                        THE SCHOOL
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="scene-overlay"></div>
-
-            <div class="glass-card approach-card">
-
-                <div class="glass-card-number">
-                    15
-                </div>
-
-                <div class="glass-card-content">
-
-                    <p class="eyebrow">
-                        OUR APPROACH
-                    </p>
-
-                    <h2>
-                        Education is
-                        more than a lesson.
-                    </h2>
-
-                    <p>
-                        It is the process of developing
-                        knowledge, discipline,
-                        curiosity and character.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             16 — PHILOSOPHY / MOTTO
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-philosophy"
-            data-scene="16"
-            data-title="THE PHILOSOPHY"
-        >
-
-            <div class="scene-philosophy-background"></div>
-
-            <div class="philosophy-content">
-
-                <span class="philosophy-number">
-                    16
-                </span>
-
-                <p class="eyebrow">
-                    OUR PHILOSOPHY
-                </p>
-
-                <h2>
-                    “God teacheth men
-                    which he knew not.”
-                </h2>
-
-                <div class="philosophy-line"></div>
-
-                <p class="philosophy-note">
-                    Knowledge begins with the
-                    willingness to learn.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             17 — FINAL REVEAL
-        ====================================================== -->
-
-        <section
-            class="walk-scene scene-final"
-            data-scene="17"
-            data-title="THE STUDY PARK"
-        >
-
-            <div class="final-background"></div>
-
-            <div class="final-content">
-
-                <p class="eyebrow">
-                    WELCOME
-                </p>
-
-                <h2>
-                    THE STUDY PARK
-                </h2>
-
-                <div class="final-line"></div>
-
-                <p>
-                    KG — XII
-                </p>
-
-                <div class="final-details">
-
-                    <span>
-                        8:00 AM — 2:10 PM
-                    </span>
-
-                    <span>
-                        GARDEN REACH, KOLKATA
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- =========================================================
-         FOOTER
-    ========================================================== -->
-
-    <footer class="site-footer">
-
-        <div class="footer-brand">
-            THE STUDY PARK
-        </div>
-
-        <div class="footer-info">
-
-            <span>
-                KG — XII
-            </span>
-
-            <span>
-                GARDEN REACH, KOLKATA
-            </span>
+          <span class="muted">
+            Trusted by Nav Disha Educational Trust.
+          </span>
 
         </div>
 
-        <div class="footer-contact">
+      </div>
 
-            <a href="tel:03324895786">
-                03324895786
-            </a>
+      <div class="stat-row">
 
-            <span>
-                8:00 AM — 2:10 PM
-            </span>
+        <div class="stat">
+          <strong>KG 1–12</strong>
+          <span>Learning through the years</span>
+        </div>
+
+        <div class="stat">
+          <strong>8:00–2:10</strong>
+          <span>School hours</span>
+        </div>
+
+        <div class="stat">
+          <strong>Kolkata</strong>
+          <span>Our local community</span>
+        </div>
+
+        <div class="stat">
+          <strong>Growth</strong>
+          <span>Learning with purpose</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAMPUS GALLERY -->
+    <section class="campus-section section-pad" id="campus">
+
+      <div class="section-heading">
+
+        <div>
+          <div class="section-kicker">02 / Explore our school</div>
+
+          <h2>
+            A closer look at
+            <span>our campus.</span>
+          </h2>
+        </div>
+
+        <p>
+          From the school entrance to our classrooms, discover the
+          spaces that make up everyday school life.
+        </p>
+
+      </div>
+
+
+      <div class="campus-grid">
+
+        <!-- 1. SCHOOL BUILDING -->
+        <article class="campus-card campus-card-large">
+
+          <div class="campus-image">
+            <img
+              src="assets/school-building.png"
+              alt="The school building"
+              loading="lazy"
+            >
+            <span class="image-index">01</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>Our school building</h3>
+              <p>A place to learn, connect and grow.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 2. SCHOOL GATE -->
+        <article class="campus-card">
+
+          <div class="campus-image">
+            <img
+              src="assets/school-gate.jpg"
+              alt="THE STUDY PARK school entrance gate"
+              loading="lazy"
+            >
+            <span class="image-index">02</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>Our school gate</h3>
+              <p>The beginning of every school day.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 3. SCHOOL OFFICE - PHOTO 1 -->
+        <article class="campus-card">
+
+          <div class="campus-image placeholder-image">
+            <img
+              src="assets/school-office-1.jpg"
+              alt="School office reception"
+              loading="lazy"
+            >
+            <span class="image-index">03</span>
+            <span class="photo-needed">ADD PHOTO</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>School office</h3>
+              <p>Here to help students and families.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 3. SCHOOL OFFICE - PHOTO 2 -->
+        <article class="campus-card">
+
+          <div class="campus-image placeholder-image">
+            <img
+              src="assets/school-office-2.jpg"
+              alt="Inside the school office"
+              loading="lazy"
+            >
+            <span class="image-index">04</span>
+            <span class="photo-needed">ADD PHOTO</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>Inside the office</h3>
+              <p>A point of contact for families.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 4. SCHOOL ASSEMBLY -->
+        <article class="campus-card">
+
+          <div class="campus-image placeholder-image">
+            <img
+              src="assets/school-assembly.jpg"
+              alt="School assembly"
+              loading="lazy"
+            >
+            <span class="image-index">05</span>
+            <span class="photo-needed">ADD PHOTO</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>School assembly</h3>
+              <p>Beginning the day together.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 5. SCHOOL CORRIDOR -->
+        <article class="campus-card">
+
+          <div class="campus-image placeholder-image">
+            <img
+              src="assets/school-corridor.jpg"
+              alt="School corridor"
+              loading="lazy"
+            >
+            <span class="image-index">06</span>
+            <span class="photo-needed">ADD PHOTO</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>School corridor</h3>
+              <p>The everyday path between lessons.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+
+        <!-- 6. CLASSROOM WITH STUDENTS -->
+        <article class="campus-card campus-card-wide">
+
+          <div class="campus-image placeholder-image">
+            <img
+              src="assets/classroom-students.jpg"
+              alt="Students learning in a classroom"
+              loading="lazy"
+            >
+            <span class="image-index">07</span>
+            <span class="photo-needed">ADD PHOTO</span>
+          </div>
+
+          <div class="campus-card-copy">
+            <div>
+              <h3>Inside the classroom</h3>
+              <p>Where questions become ideas and understanding.</p>
+            </div>
+            <span class="round-arrow">↗</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ADMISSIONS -->
+    <section class="admissions section-pad" id="admissions">
+
+      <div class="section-kicker">03 / Admissions</div>
+
+      <div class="admissions-grid">
+
+        <div>
+          <h2>
+            Start your
+            <span>learning journey.</span>
+          </h2>
+
+          <p>
+            Interested in admission from KG 1 to Class 12?
+            Contact our school to ask about the current admission
+            process, class availability and required documents.
+          </p>
+
+          <a href="tel:8240818737" class="button button-light">
+            Call the school <span>↗</span>
+          </a>
+        </div>
+
+
+        <div class="admissions-side">
+
+          <div class="admission-line">
+            <span>01</span>
+            <div>
+              <b>Get in touch</b>
+              <p>Call or email the school office.</p>
+            </div>
+            <span>↗</span>
+          </div>
+
+          <div class="admission-line">
+            <span>02</span>
+            <div>
+              <b>Ask about your class</b>
+              <p>Confirm availability and admission dates.</p>
+            </div>
+            <span>↗</span>
+          </div>
+
+          <div class="admission-line">
+            <span>03</span>
+            <div>
+              <b>Understand the process</b>
+              <p>Find out which documents are required.</p>
+            </div>
+            <span>↗</span>
+          </div>
+
+          <small>
+            Please contact the school for the latest admission details.
+          </small>
 
         </div>
 
-        <div class="footer-bottom">
+      </div>
 
-            <span>
-                © THE STUDY PARK
-            </span>
+    </section>
 
-            <span>
-                A PLACE TO LEARN. A PLACE TO GROW.
-            </span>
+
+    <!-- LOCATION -->
+    <section class="location-section section-pad" id="location">
+
+      <div class="section-heading">
+
+        <div>
+          <div class="section-kicker">04 / Find us</div>
+
+          <h2>
+            Part of the
+            <span>Kolkata community.</span>
+          </h2>
+        </div>
+
+        <p>
+          Visit us in Garden Reach, Kolkata. Contact the school office
+          if you need help with directions or visiting hours.
+        </p>
+
+      </div>
+
+
+      <div class="location-card">
+
+        <div class="location-graphic">
+          <div class="map-ring ring-a"></div>
+          <div class="map-ring ring-b"></div>
+          <div class="map-pin">⌖</div>
+
+          <span class="map-label">THE STUDY PARK</span>
+          <span class="map-sub">GARDEN REACH · KOLKATA</span>
+        </div>
+
+
+        <div class="location-info">
+
+          <div class="info-line">
+            <span class="info-icon">⌖</span>
+
+            <div>
+              <small>OUR ADDRESS</small>
+              <p>
+                J-142/A, Paharpur Road,<br>
+                Kolkata – 700024, West Bengal
+              </p>
+            </div>
+          </div>
+
+
+          <div class="info-line">
+            <span class="info-icon">◷</span>
+
+            <div>
+              <small>SCHOOL HOURS</small>
+              <p>8:00 AM – 2:10 PM</p>
+              <em>
+                Confirm holidays and office availability before visiting.
+              </em>
+            </div>
+          </div>
+
+
+          <a
+            class="button button-green"
+            href="https://www.google.com/maps/search/?api=1&query=THE+STUDY+PARK+J-142%2FA+Paharpur+Road+Kolkata+700024"
+            target="_blank"
+            rel="noopener"
+          >
+            Get directions <span>↗</span>
+          </a>
 
         </div>
 
-    </footer>
+      </div>
+
+    </section>
 
 
-    <!-- =========================================================
-         JAVASCRIPT
-    ========================================================== -->
+    <!-- WHY CHOOSE US -->
+    <section class="why-section section-pad" id="why-us">
 
-    <script src="script.js"></script>
+      <div class="section-heading">
+
+        <div>
+          <div class="section-kicker">05 / Why THE STUDY PARK</div>
+
+          <h2>
+            A strong start.
+            <span>A path to grow.</span>
+          </h2>
+        </div>
+
+        <p>
+          Choosing a school is an important decision.
+          Here are a few things families can explore when they connect
+          with THE STUDY PARK.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <article class="why-card">
+          <span class="why-number">01</span>
+          <div class="why-icon">↗</div>
+
+          <h3>
+            A learning journey
+            from KG 1 to 12
+          </h3>
+
+          <p>
+            A school community supporting students across important
+            stages of their education.
+          </p>
+        </article>
+
+
+        <article class="why-card">
+          <span class="why-number">02</span>
+          <div class="why-icon">◎</div>
+
+          <h3>
+            Connected to
+            our community
+          </h3>
+
+          <p>
+            Located in Garden Reach, Kolkata, with a focus on serving
+            local families.
+          </p>
+        </article>
+
+
+        <article class="why-card">
+          <span class="why-number">03</span>
+          <div class="why-icon">✳</div>
+
+          <h3>
+            Learning with
+            a purpose
+          </h3>
+
+          <p>
+            Guided by the belief that learning opens the door
+            to new understanding.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="gentle-note">
+        Contact the school to learn more about its facilities,
+        classes and admission process.
+      </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section section-pad" id="contact">
+
+      <div class="contact-top">
+
+        <div class="section-kicker">06 / Contact</div>
+
+        <h2>
+          Let’s start
+          a <span>conversation.</span>
+        </h2>
+
+        <p>
+          For admission enquiries, school information or directions,
+          get in touch with THE STUDY PARK.
+        </p>
+
+      </div>
+
+
+      <div class="contact-details">
+
+        <a class="contact-item" href="tel:8240818737">
+          <span class="contact-item-label">PHONE</span>
+          <strong>82408 18737</strong>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <a
+          class="contact-item"
+          href="mailto:tspimn2018@gmail.com"
+        >
+          <span class="contact-item-label">EMAIL</span>
+          <strong>tspimn2018@gmail.com</strong>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+
+        <div class="contact-item">
+          <span class="contact-item-label">TRUSTED BY</span>
+          <strong>Nav Disha Educational Trust</strong>
+          <span class="contact-arrow">✳</span>
+        </div>
+
+      </div>
+
+
+      <div class="contact-bottom">
+
+        <img src="assets/school-logo.jpg" alt="THE STUDY PARK logo">
+
+        <div>
+          <b>THE STUDY PARK</b>
+          <span>“God teachth men which he knew not.”</span>
+        </div>
+
+        <a href="#top" class="back-top">Back to top ↑</a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© <span id="year"></span> THE STUDY PARK, Kolkata</span>
+    <span>Learning. Growth. Possibility.</span>
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
